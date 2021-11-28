@@ -5,16 +5,15 @@ import com.cronnoss.converters.RecipeCommandToRecipe;
 import com.cronnoss.converters.RecipeToRecipeCommand;
 import com.cronnoss.domain.Recipe;
 import com.cronnoss.repositories.RecipeRepository;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-//@RunWith(SpringRunner.class)
-@Disabled
+@ExtendWith(SpringExtension.class)
 //@DataMongoTest
 @SpringBootTest
 public class RecipeServiceIT {
