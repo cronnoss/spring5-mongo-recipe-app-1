@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 //@RunWith(SpringRunner.class)
 @Disabled
+//@DataMongoTest
 @SpringBootTest
 public class RecipeServiceIT {
 
@@ -33,7 +33,7 @@ public class RecipeServiceIT {
     @Autowired
     RecipeToRecipeCommand recipeToRecipeCommand;
 
-    @Transactional
+    //@Transactional
     @Test
     public void testSaveOfDescription() throws Exception {
         //given

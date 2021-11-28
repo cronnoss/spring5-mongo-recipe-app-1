@@ -10,7 +10,6 @@ import com.cronnoss.domain.Recipe;
 import com.cronnoss.repositories.RecipeRepository;
 import com.cronnoss.repositories.UnitOfMeasureRepository;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -53,7 +52,6 @@ public class IngredientServiceImplTest {
     }
 
     @Test
-    @Disabled
     public void findByRecipeIdAndReceipeIdHappyPath() throws Exception {
         //given
         Recipe recipe = new Recipe();
